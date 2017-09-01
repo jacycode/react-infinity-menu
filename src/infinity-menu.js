@@ -254,7 +254,9 @@ export default class InfinityMenu extends React.Component {
 								onClick={this.onNodeClick.bind(this, tree, curr, keyPath)}
 								className="infinity-menu-node-container"
 							>
+								{keyPath.length==1?<img className="infinity-menu-node-container-icon" src={curr.icon} />:null}
 								<label>{nodeName}</label>
+								<img className="infinity-menu-node-container-indicator" src={curr.isOpen?curr.openIndicator:curr.closeIndicator} />
 							</div>
 						);
 					}
@@ -281,7 +283,9 @@ export default class InfinityMenu extends React.Component {
 								onClick={this.onNodeClick.bind(this, tree, curr, keyPath)}
 								className="infinity-menu-node-container"
 							>
+								{keyPath.length==1?<img className="infinity-menu-node-container-icon" src={curr.icon} />:null}
 								<label>{nodeName}</label>
+								<img className="infinity-menu-node-container-indicator" src={curr.isOpen?curr.openIndicator:curr.closeIndicator} />
 							</div>
 						);
 					}

@@ -1,29 +1,54 @@
 .infinity-menu-node-container {
+	box-sizing: content-box;
 	width: 100%;
 	background-color: rgb(137, 139, 143);
-	color: rgb(255, 255, 255);
-	height: 40px;
-	padding-left: 10px;
-	padding-top: 20px;
-	border-bottom: solid 1px rgb(73, 73, 73);
+	color: rgb(171, 171, 171);
+	height: 60px;
+	/*padding-left: 40px;*/
+	line-height: 60px;
+	/*padding-top: 20px;*/
+	border: solid 0.5px rgb(221, 221, 221);
+	border-bottom:0;
+	background-color: white;
+}
+/*react-infinity-menu-2 样式*/
+ul{
+	margin-top:0 !important;
+	margin-bottom: 0 !important;
+	list-style-type: none;
+}
+.infinity-menu-node-container:hover {
+	background-color: rgb(240, 240, 240);
 }
 
-.infinity-menu-node-container:hover {
-	background-color: rgb(73, 73, 73);
+.infinity-menu-node-container-icon{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+.infinity-menu-node-container-indicator{
+	display: block;
+	float: right;
+	margin-right: 40px;
+	margin-top: 27px;
 }
 
 .infinity-menu-leaf-container {
+	box-sizing: content-box;
 	width: 100%;
 	background-color: rgb(94, 96, 99);
-	color: rgb(255, 255, 255);
+	color: rgb(171, 171, 171);
 	height: 30px;
-	padding-left: 20px;
+	padding-left: 50px;
 	padding-top: 15px;
-	border-bottom: solid 1px rgb(73, 73 ,73);
+	background-color: white;
 }
 
 .infinity-menu-leaf-container:hover {
-	background-color: rgb(73, 73, 73);
+	background-color: rgb(240, 240, 240);
 }
 
 .infinity-menu-load-more-container {

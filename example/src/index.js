@@ -8,77 +8,36 @@ class App extends React.Component {
 	componentWillMount() {
 		const tree = [
 			{
-				name: "Menu1",
+				name: "基础数据",
 				id: 0,
 				isOpen: false,
+				icon:"./src/test.png",
+				openIndicator:"./src/openIndicator.png",
+				closeIndicator:"./src/closeIndicator.png",
 				children: [
 					{
 						name: "SubMenu1-1",
 						id: 0,
 						isOpen: false,
-						children: [
-							{
-								name: "Sub-SubMenu1-1",
-								id: 0
-							},
-							{
-								name: "Sub-SubMenu1-2",
-								id: 1
-							},
-							{
-								name: "Sub-SubMenu1-3",
-								id: 2
-							},
-							{
-								name: "Sub-SubMenu1-4",
-								id: 3
-							},
-							{
-								name: "Sub-SubMenu1-5",
-								id: 4
-							},
-							{
-								name: "Sub-SubMenu1-6",
-								id: 5
-							},
-							{
-								name: "Sub-SubMenu1-7",
-								id: 6
-							},
-							{
-								name: "Sub-SubMenu1-8",
-								id: 7
-							},
-							{
-								name: "Sub-SubMenu1-9",
-								id: 8
-							},
-							{
-								name: "Sub-SubMenu1-99",
-								id: 9
-							},
-							{
-								name: "Sub-SubMenu1-999",
-								id: 10
-							}
-						]
+
 					},
 					{
 						name: "SubMenu2-1",
 						id: 1,
-						children: [
-							{
-								name: "Sub-SubMenu2-1",
-								id: 0
-							}
-						]
+
+					},
+					{
+						name: "SubMenu3-1",
+						id: 2,
+
 					}
 				]
 			},
 			{
-				name: "Menu2",
+				name: "行业基准值",
 				id: 1,
 				isOpen: false,
+				icon:"./src/test.png",
 				children: [
 					{
 						name: "SubMenu2-1",
@@ -95,9 +54,10 @@ class App extends React.Component {
 				]
 			},
 			{
-				name: "Menu3",
+				name: "效果对比",
 				id: 2,
 				isOpen: false,
+				icon:"./src/test.png",
 				children: [
 					{
 						name: "SubMenu3-1",
@@ -126,7 +86,7 @@ class App extends React.Component {
 			<InfinityMenu
 				tree={this.state.tree}
 				onNodeMouseClick={this.onNodeMouseClick.bind(this)}
-				maxLeaves={2}
+				maxLeaves={5}
 			/>
 		);
 	}
