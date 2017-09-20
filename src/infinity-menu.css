@@ -12,11 +12,13 @@
 	background-color: white;
 }
 /*react-infinity-menu-2 样式*/
-ul{
+.infinity-menu-display-tree-container ul{
 	margin-top:0 !important;
 	margin-bottom: 0 !important;
 	list-style-type: none;
+	padding: 0;
 }
+
 .infinity-menu-node-container:hover {
 	background-color: rgb(240, 240, 240);
 }
@@ -24,7 +26,7 @@ ul{
 .infinity-menu-node-container-icon{
 	display: block;
 	float: left;
-	margin-right: 10px;
+	margin-right: 22px;
 	margin-left: 40px;
 	margin-top: 20px;
 }
@@ -42,7 +44,7 @@ ul{
 	background-color: rgb(94, 96, 99);
 	color: rgb(171, 171, 171);
 	height: 30px;
-	padding-left: 50px;
+	padding-left: 90px;
 	padding-top: 15px;
 	background-color: white;
 }

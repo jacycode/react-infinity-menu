@@ -10,7 +10,7 @@ class App extends React.Component {
 			{
 				name: "基础数据",
 				id: 0,
-				isOpen: false,
+				isOpen: true,
 				icon:"./src/test.png",
 				openIndicator:"./src/openIndicator.png",
 				closeIndicator:"./src/closeIndicator.png",
@@ -18,18 +18,17 @@ class App extends React.Component {
 					{
 						name: "SubMenu1-1",
 						id: 0,
-						isOpen: false,
-
+						active:true,
 					},
 					{
 						name: "SubMenu2-1",
 						id: 1,
-
+						active:false,
 					},
 					{
 						name: "SubMenu3-1",
 						id: 2,
-
+						active:false,
 					}
 				]
 			},
@@ -41,15 +40,18 @@ class App extends React.Component {
 				children: [
 					{
 						name: "SubMenu2-1",
-						id: 0
+						id: 0,
+						active:false,
 					},
 					{
 						name: "SubMenu2-2",
-						id: 1
+						id: 1,
+						active:false,
 					},
 					{
 						name: "SubMenu2-3",
-						id: 2
+						id: 2,
+						active:false,
 					}
 				]
 			},
@@ -61,11 +63,13 @@ class App extends React.Component {
 				children: [
 					{
 						name: "SubMenu3-1",
-						id: 0
+						id: 0,
+						active:false,
 					},
 					{
 						name: "SubMenu3-2",
-						id: 1
+						id: 1,
+						active:false,
 					}
 				]
 			}

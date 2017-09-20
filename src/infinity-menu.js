@@ -21,6 +21,7 @@ export default class InfinityMenu extends React.Component {
 		this.setSearchInput = this.setSearchInput.bind(this);
 		this.stopSearching = this.stopSearching.bind(this);
 		this.startSearching = this.startSearching.bind(this);
+		this.onLeafMouseUp = this.onLeafMouseUp.bind(this);
 	}
 	/*
 	 *	@function onNodeClick
@@ -54,6 +55,18 @@ export default class InfinityMenu extends React.Component {
 			this.props.onNodeMouseClick(event, tree, node, currLevel, keyPath);
 		}
 	}
+	onLeafMouseUp(e, curr){
+		if (this.props.tree != undefined){
+			this.props.tree.forEach((val)=>{
+				val.children.forEach((subVal)=>{
+					subVal.active = false;
+				});
+			});
+			curr.active = true;
+			this.forceUpdate();
+		}
+	}
+
 	/*
 	* @function shouldComponentUpdate
 	* @returns {boolean} return based on user pass in shouldComponentUpdate or return true
@@ -200,10 +213,10 @@ export default class InfinityMenu extends React.Component {
 						<li key={itemKey}
 							className="infinity-menu-leaf-container"
 							onMouseDown={(e) => this.props.onLeafMouseDown ? this.props.onLeafMouseDown(e, curr) : null}
-							onMouseUp={(e) => this.props.onLeafMouseUp ? this.props.onLeafMouseUp(e, curr) : null}
+							onMouseUp={(e) => this.onLeafMouseUp ? this.onLeafMouseUp(e, curr) : null}
 							onClick={(e) => this.props.onLeafMouseClick ? this.props.onLeafMouseClick(e, curr) : null}
 							>
-							<span>{curr.name}</span>
+							{curr.active?<span style={{color:"orange"}}>{curr.name}</span>:<span style={{color:"rgb(171, 171, 171)"}}>{curr.name}</span>}
 						</li>
 					);
 				}
