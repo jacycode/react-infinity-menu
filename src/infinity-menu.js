@@ -56,10 +56,16 @@ export default class InfinityMenu extends React.Component {
 		}
 	}
 	onLeafMouseUp(e, curr){
+		console.log(999);
 		if (this.props.tree != undefined){
 			this.props.tree.forEach((val)=>{
 				val.children.forEach((subVal)=>{
 					subVal.active = false;
+					if (subVal.children != undefined) {
+						subVal.children.forEach((subSubVal) => {
+							subSubVal.active = false;
+						});
+					}
 				});
 			});
 			curr.active = true;

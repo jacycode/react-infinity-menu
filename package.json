@@ -1,6 +1,6 @@
 {
   "name": "react-infinity-menu-2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An unlimited deep side menu",
   "main": "./dist/infinity-menu.js",
   "scripts": {

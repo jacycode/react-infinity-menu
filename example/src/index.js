@@ -18,7 +18,7 @@ class App extends React.Component {
 					{
 						name: "SubMenu1-1",
 						id: 0,
-						active:true,
+						active:false,
 					},
 					{
 						name: "SubMenu2-1",
@@ -29,6 +29,19 @@ class App extends React.Component {
 						name: "SubMenu3-1",
 						id: 2,
 						active:false,
+						children: [
+							{
+								name: "item1-1",
+								id: 1,
+								active:true,
+							},
+							{
+								name: "item1-2",
+								id: 2,
+								active:false,
+							},
+
+						]
 					}
 				]
 			},

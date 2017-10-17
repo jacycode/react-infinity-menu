@@ -1,3 +1,4 @@
+/************  一级菜单  **************/
 .infinity-menu-node-container {
 	box-sizing: content-box;
 	width: 100%;
@@ -18,7 +19,6 @@
 	list-style-type: none;
 	padding: 0;
 }
-
 .infinity-menu-node-container:hover {
 	background-color: rgb(240, 240, 240);
 }
@@ -38,6 +38,7 @@
 	margin-top: 27px;
 }
 
+/************  二级菜单  **************/
 .infinity-menu-leaf-container {
 	box-sizing: content-box;
 	width: 100%;
@@ -53,6 +54,26 @@
 	background-color: rgb(240, 240, 240);
 }
 
+
+/************  三级菜单  **************/
+ul>.infinity-menu-node-container{
+	display: inline-block;
+	box-sizing: content-box;
+	width: 100%;
+	background-color: rgb(94, 96, 99);
+	color: rgb(171, 171, 171);
+	height: 30px;
+	line-height: 22px;
+	padding-left: 90px;
+	padding-top: 15px;
+	background-color: white;
+	border: 0;
+}
+ul>.infinity-menu-node-container+ul>li{
+	padding-left: 120px;
+}
+
+
 .infinity-menu-load-more-container {
 	width: 100%;
 	background-color: rgb(255, 255, 255);
@@ -63,7 +84,6 @@
 	text-align: center;
 	list-style-type: none;
 }
-
 .infinity-menu-load-more-container:hover {
 	background-color: rgb(200, 200, 200);
 }
