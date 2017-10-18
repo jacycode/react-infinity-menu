@@ -8,8 +8,7 @@
 	/*padding-left: 40px;*/
 	line-height: 60px;
 	/*padding-top: 20px;*/
-	border: solid 0.5px rgb(221, 221, 221);
-	border-bottom:0;
+	border: solid 0.05px rgb(221, 221, 221);
 	background-color: white;
 }
 /*react-infinity-menu-2 样式*/
@@ -49,7 +48,6 @@
 	padding-top: 15px;
 	background-color: white;
 }
-
 .infinity-menu-leaf-container:hover {
 	background-color: rgb(240, 240, 240);
 }
@@ -71,6 +69,10 @@ ul>.infinity-menu-node-container{
 }
 ul>.infinity-menu-node-container+ul>li{
 	padding-left: 120px;
+}
+ul>.infinity-menu-node-container>.infinity-menu-node-container-indicator {
+	margin-right: 130px;
+	margin-top: 8px;
 }
 
 

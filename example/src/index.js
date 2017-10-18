@@ -29,6 +29,8 @@ class App extends React.Component {
 						name: "SubMenu3-1",
 						id: 2,
 						active:false,
+						openIndicator:"./src/openIndicator.png",
+						closeIndicator:"./src/closeIndicator.png",
 						children: [
 							{
 								name: "item1-1",
@@ -50,6 +52,8 @@ class App extends React.Component {
 				id: 1,
 				isOpen: false,
 				icon:"./src/test.png",
+				openIndicator:"./src/openIndicator.png",
+				closeIndicator:"./src/closeIndicator.png",
 				children: [
 					{
 						name: "SubMenu2-1",
@@ -73,6 +77,8 @@ class App extends React.Component {
 				id: 2,
 				isOpen: false,
 				icon:"./src/test.png",
+				openIndicator:"./src/openIndicator.png",
+				closeIndicator:"./src/closeIndicator.png",
 				children: [
 					{
 						name: "SubMenu3-1",
