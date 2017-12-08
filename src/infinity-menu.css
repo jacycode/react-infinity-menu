@@ -8,8 +8,11 @@
 	/*padding-left: 40px;*/
 	line-height: 60px;
 	/*padding-top: 20px;*/
-	border: solid 0.05px rgb(221, 221, 221);
+	border: solid 1px rgb(221, 221, 221);
+	border-right: 0;
 	background-color: white;
+	/*margin-top: -1px;*/
+	/*padding-bottom: 1px;*/
 }
 /*react-infinity-menu-2 样式*/
 .infinity-menu-display-tree-container ul{
