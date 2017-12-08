@@ -222,7 +222,7 @@ export default class InfinityMenu extends React.Component {
 							onMouseUp={(e) => this.onLeafMouseUp ? this.onLeafMouseUp(e, curr) : null}
 							onClick={(e) => this.props.onLeafMouseClick ? this.props.onLeafMouseClick(e, curr) : null}
 							>
-							{curr.active?<span style={{color:"#00cccb"}}>{curr.name}</span>:<span style={{color:"rgb(171, 171, 171)"}}>{curr.name}</span>}
+							{curr.active?<span style={{color:"orange"}}>{curr.name}</span>:<span style={{color:"rgb(171, 171, 171)"}}>{curr.name}</span>}
 						</li>
 					);
 				}
