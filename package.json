@@ -1,6 +1,6 @@
 {
   "name": "react-infinity-menu-2",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An unlimited deep side menu",
   "main": "./dist/infinity-menu.js",
   "scripts": {
@@ -37,9 +37,9 @@
     "eslint-plugin-react": "^6.9.0",
     "jsdom": "^6.5.1",
     "mocha": "^2.3.3",
-    "react": "^0.14.3",
+    "react": "^16.2.0",
     "react-addons-test-utils": "^0.14.3",
-    "react-dom": "^0.14.3",
+    "react-dom": "^16.2.0",
     "should": "^7.1.0",
     "should-sinon": "0.0.3",
     "sinon": "^1.17.1",

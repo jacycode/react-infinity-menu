@@ -22,7 +22,8 @@
 	padding: 0;
 }
 .infinity-menu-node-container:hover {
-	background-color: rgb(240, 240, 240);
+	background-color: #00cccb;
+	color: white;
 }
 
 .infinity-menu-node-container-icon{
@@ -52,9 +53,15 @@
 	background-color: white;
 }
 .infinity-menu-leaf-container:hover {
-	background-color: rgb(240, 240, 240);
+	background-color: #00CCCB;
+	color: white;
 }
-
+.jdy-active{
+	color: #00CCCB;
+}
+.jdy-noactive{
+	color: rgb(171,171,171);
+}
 
 /************  三级菜单  **************/
 ul>.infinity-menu-node-container{
@@ -90,5 +97,6 @@ ul>.infinity-menu-node-container>.infinity-menu-node-container-indicator {
 	list-style-type: none;
 }
 .infinity-menu-load-more-container:hover {
-	background-color: rgb(200, 200, 200);
+	background-color: #00CCCB;
+	color: white;
 }
