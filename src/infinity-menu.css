@@ -11,6 +11,7 @@
 	border: solid 1px rgb(221, 221, 221);
 	border-right: 0;
 	background-color: white;
+	border-bottom: none;
 	/*margin-top: -1px;*/
 	/*padding-bottom: 1px;*/
 }

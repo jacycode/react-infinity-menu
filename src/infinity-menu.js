@@ -291,6 +291,7 @@ export default class InfinityMenu extends React.Component {
 							<div key={key}
 								onClick={this.onNodeClick.bind(this, tree, curr, keyPath)}
 								className="infinity-menu-node-container"
+								style={keyPath.length==1?{borderBottom:'solid 1px rgb(221, 221, 221)'}:null}
 							>
 								{keyPath.length==1?<img className="infinity-menu-node-container-icon" src={curr.icon} />:null}
 								<label>{nodeName}</label>
